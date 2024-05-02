@@ -2,18 +2,23 @@
   "name": "react.dev",
   "version": "0.0.0",
   "main": "/src/index.js",
+  "homepage": "https://RobyOneJ.github.io/game_tic-tac-toe.git",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "set NODE_OPTIONS=--openssl-legacy-provider && react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   },
   "dependencies": {
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
-    "react-scripts": "^5.0.0"
+    "react-scripts": "^3.0.1"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "gh-pages": "^6.1.1"
+  },
   "browserslist": {
     "production": [
       ">0.2%",

@@ -1,3 +1,4 @@
+import React from 'react';
 import { useState } from 'react';
 
 /* 1. The first line defines a 'function called Square'. 
